@@ -14,10 +14,9 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
-# 启用ribbon重试        
+    
 zuul:
   retryable: true
-     # 转发路由规则
   routes:
     item-service: /item-service/**
     user-service: /user-service/**
